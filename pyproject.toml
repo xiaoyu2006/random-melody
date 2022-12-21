@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "random-melody"
+version = "0.0.0"
+description = "Generates random melodies."
+authors = ["Yi Cao <caoyi06@qq.com>"]
+readme = "README.md"
+packages = [{include = "random_melody"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+MIDIUtil = "^1.2.1"
+
+[tool.poetry.scripts]
+random-melody = "random_melody.main:entry"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
